@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WorkRota – Zásady ochrany soukromí</title>
+  <meta name="description" content="Zásady ochrany soukromí aplikace WorkRota" />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #1f2937;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f8fafc;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #0284c7;
+        --border: #e2e8f0;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+
+    p, li {
+      font-size: 1rem;
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .meta {
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 32px;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.95em;
+      background: rgba(127,127,127,.12);
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <h1>WorkRota – Zásady ochrany soukromí</h1>
+      <div class="meta">
+        Poslední aktualizace: <strong>DATUM_AKTUALIZACE</strong>
+      </div>
+
+      <p>
+        Tyto zásady ochrany soukromí popisují, jak aplikace <strong>WorkRota</strong> nakládá s daty uživatelů.
+        WorkRota je osobní aplikace pro plánování směn a orientační výpočet hrubého výdělku.
+      </p>
+
+      <h2>1. Kdo je provozovatelem aplikace</h2>
+      <p>
+        Provozovatel aplikace: <strong>TVÉ_JMÉNO_NEBO_NÁZEV</strong><br />
+        Kontaktní e-mail: <a href="mailto:TVŮJ_EMAIL">TVŮJ_EMAIL</a>
+      </p>
+
+      <h2>2. Jaká data aplikace zpracovává</h2>
+      <p>Aplikace může pracovat s údaji, které do ní uživatel zadá ručně, zejména:</p>
+      <ul>
+        <li>typy směn a rozpis směn,</li>
+        <li>hodinová sazba a nastavení příplatků,</li>
+        <li>ruční úpravy jednotlivých dnů, poznámky a nastavení aplikace,</li>
+        <li>nastavení notifikací.</li>
+      </ul>
+
+      <h2>3. Kde jsou data uložena</h2>
+      <p>
+        V aktuální verzi aplikace jsou data ukládána <strong>lokálně v zařízení uživatele</strong>.
+        Data nejsou odesílána na vlastní server provozovatele aplikace.
+      </p>
+
+      <h2>4. Sdílení dat s třetími stranami</h2>
+      <p>
+        V aktuální verzi aplikace nejsou osobní údaje uživatelů prodávány ani sdíleny s třetími stranami
+        za účelem marketingu.
+      </p>
+
+      <h2>5. Účet a registrace</h2>
+      <p>
+        Aplikace <strong>nevyžaduje vytvoření uživatelského účtu</strong> ani registraci.
+      </p>
+
+      <h2>6. Notifikace</h2>
+      <p>
+        Pokud uživatel povolí oznámení, může aplikace využít systémové notifikace zařízení
+        k připomenutí nadcházející směny. Tato oznámení slouží pouze k fungování aplikace.
+      </p>
+
+      <h2>7. Doba uchování dat</h2>
+      <p>
+        Data zůstávají uložena v zařízení uživatele, dokud je uživatel nesmaže,
+        neodinstaluje aplikaci nebo nevymaže její úložiště.
+      </p>
+
+      <h2>8. Jak může uživatel data smazat</h2>
+      <p>Uživatel může data odstranit některým z těchto způsobů:</p>
+      <ul>
+        <li>smazáním dat přímo v aplikaci, pokud je tato možnost dostupná,</li>
+        <li>vymazáním dat aplikace v nastavení zařízení,</li>
+        <li>odinstalováním aplikace.</li>
+      </ul>
+
+      <h2>9. Děti a mladiství</h2>
+      <p>
+        Aplikace není určena dětem mladším 13 let a není cíleně navržena pro sběr údajů od dětí.
+      </p>
+
+      <h2>10. Změny těchto zásad</h2>
+      <p>
+        Tyto zásady ochrany soukromí mohou být čas od času aktualizovány, například při změně funkcí aplikace
+        nebo při přidání nových služeb. Aktuální verze bude vždy zveřejněna na této stránce.
+      </p>
+
+      <h2>11. Kontakt</h2>
+      <p>
+        V případě dotazů ohledně ochrany soukromí nás můžete kontaktovat na:
+        <a href="mailto:TVŮJ_EMAIL">TVŮJ_EMAIL</a>
+      </p>
+
+      <div class="footer">
+        <p>
+          Poznámka: Pokud budou do budoucna do aplikace přidány reklamy, analytické nástroje,
+          crash reporting nebo cloudové ukládání, budou tyto zásady odpovídajícím způsobem upraveny.
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
