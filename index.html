@@ -1,32 +1,36 @@
 <!doctype html>
-<html lang="cs">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>WorkRota – Zásady ochrany soukromí</title>
-  <meta name="description" content="Zásady ochrany soukromí aplikace WorkRota" />
+  <title>WorkRota – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the WorkRota shift calendar app" />
   <style>
     :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #e5e7eb;
-      --muted: #94a3b8;
-      --accent: #38bdf8;
-      --border: #1f2937;
+      --bg: #f6f2e9;
+      --card: #fffdf8;
+      --text: #12211d;
+      --muted: #6f6a60;
+      --accent: #0d4b42;
+      --accent-soft: #dff2e9;
+      --border: #dfd3c0;
     }
 
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
       :root {
-        --bg: #f8fafc;
-        --card: #ffffff;
-        --text: #0f172a;
-        --muted: #475569;
-        --accent: #0284c7;
-        --border: #e2e8f0;
+        --bg: #10201c;
+        --card: #172923;
+        --text: #f6f2e9;
+        --muted: #c2baad;
+        --accent: #9fdcc9;
+        --accent-soft: #203c33;
+        --border: #315047;
       }
     }
 
     * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -37,225 +41,755 @@
     }
 
     .wrap {
-      max-width: 860px;
+      max-width: 920px;
       margin: 0 auto;
-      padding: 32px 20px 64px;
+      padding: 28px 18px 64px;
     }
 
-    .card {
+    .hero,
+    .policy {
       background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 28px;
-      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      border-radius: 20px;
+      padding: clamp(22px, 4vw, 36px);
+      box-shadow: 0 14px 38px rgba(0, 0, 0, .07);
     }
+
+    .policy { margin-top: 24px; }
 
     h1, h2, h3 {
       line-height: 1.25;
       margin-top: 0;
     }
 
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 8px;
-    }
+    h1 { margin-bottom: 8px; }
 
     h2 {
-      font-size: 1.2rem;
-      margin-top: 28px;
-      margin-bottom: 12px;
+      margin-top: 30px;
+      margin-bottom: 10px;
       color: var(--accent);
+      font-size: 1.2rem;
     }
 
-    p, li {
-      font-size: 1rem;
-      margin: 0 0 12px;
-    }
+    p, li { margin: 0 0 12px; }
 
     ul {
-      margin: 0 0 16px 20px;
+      margin: 0 0 18px 22px;
       padding: 0;
     }
 
-    .muted {
-      color: var(--muted);
+    a { color: var(--accent); }
+
+    .meta,
+    .muted { color: var(--muted); }
+
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
     }
 
-    .meta {
-      margin-bottom: 24px;
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    a {
-      color: var(--accent);
+    .language-nav a {
+      display: inline-block;
+      padding: 8px 13px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--text);
+      font-weight: 700;
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .notice {
+      padding: 14px 16px;
+      border-left: 4px solid var(--accent);
+      border-radius: 10px;
+      background: var(--accent-soft);
+      margin: 18px 0;
     }
 
-    .footer {
-      margin-top: 32px;
-      font-size: 0.95rem;
-      color: var(--muted);
+    .back {
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: 700;
     }
 
     code {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 0.95em;
-      background: rgba(127,127,127,.12);
+      font-size: .94em;
+      background: rgba(127, 127, 127, .14);
       padding: 2px 6px;
       border-radius: 6px;
     }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="card">
+  <main class="wrap" id="top">
+    <header class="hero">
+      <h1>WorkRota – Privacy Policy</h1>
+      <p class="meta">Effective date: <strong>11 July 2026</strong></p>
+      <p>
+        WorkRota is a personal shift calendar. This page explains which information stays on your
+        device, what Google Play, RevenueCat and Google ML Kit process, and the choices available to you.
+      </p>
+      <nav class="language-nav" aria-label="Policy languages">
+        <a href="#cs" lang="cs">Čeština</a>
+        <a href="#en" lang="en">English</a>
+        <a href="#de" lang="de">Deutsch</a>
+        <a href="#pl" lang="pl">Polski</a>
+        <a href="#sk" lang="sk">Slovenčina</a>
+      </nav>
+    </header>
+
+    <article class="policy" id="cs" lang="cs">
       <h1>WorkRota – Zásady ochrany soukromí</h1>
-      <div class="meta">
-        Poslední aktualizace: <strong>21.03.2026</strong>
-      </div>
+      <p class="meta">Účinné od: <strong>11. 7. 2026</strong></p>
 
+      <h2>1. Provozovatel a kontakt</h2>
       <p>
-        Tyto zásady ochrany soukromí popisují, jak aplikace <strong>WorkRota</strong> nakládá s daty uživatelů.
-        WorkRota je osobní aplikace pro plánování směn, připomenutí směn a orientační výpočet hrubého výdělku.
+        Provozovatelem aplikace WorkRota je <strong>Twinkik</strong>. V otázkách ochrany soukromí
+        nás kontaktujte na <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>.
       </p>
 
-      <h2>1. Kdo je provozovatelem aplikace</h2>
-      <p>
-        Provozovatel aplikace: <strong>Twinkik</strong><br />
-        Kontaktní e-mail: <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>
-      </p>
-
-      <h2>2. Jaká data aplikace zpracovává</h2>
-      <p>Aplikace může pracovat s údaji, které do ní uživatel zadá ručně, zejména:</p>
+      <h2>2. Data uložená a zpracovaná v zařízení</h2>
+      <p>WorkRota ukládá lokálně v zařízení zejména:</p>
       <ul>
-        <li>typy směn a rozpis směn,</li>
-        <li>hodinová sazba a nastavení příplatků,</li>
-        <li>ruční úpravy jednotlivých dnů, poznámky a nastavení aplikace,</li>
-        <li>nastavení notifikací.</li>
+        <li>typy směn, rozpisy, docházku, pracovní časy, absence a poznámky,</li>
+        <li>mzdová pravidla, sazby, příplatky a odhady hrubého příjmu,</li>
+        <li>nastavení aplikace, připomenutí, widgetů a lokálních záloh.</li>
       </ul>
       <p>
-        Pokud aplikace zobrazuje reklamy prostřednictvím služby <strong>Google AdMob</strong>, mohou být při používání aplikace
-        automaticky zpracovávány také technické a reklamní údaje, například:
+        WorkRota nemá vlastní uživatelské účty ani cloudové úložiště pracovních dat. Nezobrazuje
+        reklamy a neprodává osobní údaje.
       </p>
+
+      <h2>3. Fotografie a PDF pro místní rozpoznání</h2>
+      <p>
+        Pokud vyberete fotografii, snímek obrazovky nebo PDF rozpisu či výplatní pásky, rozpoznání
+        proběhne v zařízení. WorkRota soubor ani úplný rozpoznaný text neodesílá na server. Dočasnou
+        kopii vytvořenou aplikací v mezipaměti po zpracování odstraní a po kontrole neuchovává celý
+        dokument ani jeho úplný rozpoznaný text. Původní soubor ve vámi zvoleném umístění zůstává
+        pod vaší kontrolou.
+      </p>
+      <p>
+        Pro rozpoznání používá WorkRota přibalené Google ML Kit. Obraz a rozpoznaný text zůstávají
+        v zařízení, ale ML Kit automaticky odesílá Googlu technické metriky: instalační identifikátor,
+        informace o zařízení a aplikaci, výkon a latenci, konfiguraci a velikost vstupu/výstupu,
+        typy událostí a chybové kódy. Google je používá pro diagnostiku a analýzu využití ML Kit.
+      </p>
+
+      <h2>4. Kalendář, oznámení, exporty a zálohy</h2>
       <ul>
-        <li>IP adresa, ze které lze odvodit přibližnou polohu zařízení,</li>
-        <li>identifikátory zařízení a reklamní identifikátory (např. Android Advertising ID, pokud je dostupné),</li>
-        <li>informace o interakcích uživatele s aplikací a reklamou,</li>
-        <li>diagnostické a technické informace související s výkonem aplikace a SDK.</li>
+        <li>
+          Rodinný plán po udělení oprávnění čte události z vámi vybraného kalendáře pouze pro
+          místní porovnání se směnami. Události nikam neodesílá.
+        </li>
+        <li>
+          Synchronizace kalendáře zapisuje směny do samostatného kalendáře WorkRota v zařízení.
+        </li>
+        <li>
+          Oznámení a jejich akce zpracovává systém zařízení a aplikace WorkRota.
+        </li>
+        <li>
+          PDF, CSV a zálohy se vytvářejí lokálně. Mimo zařízení se dostanou jen tehdy, když je sami
+          nasdílíte nebo uložíte prostřednictvím systémového dialogu.
+        </li>
+        <li>
+          Dobrovolná zpětná vazba otevře koncept e-mailu, který můžete před odesláním upravit. Obsahuje
+          jen údaje, které sami uvedete, a zobrazenou diagnostiku jako verzi, jazyk, plán, počet spuštění,
+          platformu a čas. Nic se neodešle, dokud e-mail sami nepotvrdíte.
+        </li>
       </ul>
 
-      <h2>3. Kde jsou data uložena</h2>
+      <h2>5. Google Play a RevenueCat</h2>
       <p>
-        Údaje, které uživatel zadá do aplikace pro její hlavní funkce, jsou v běžném rozsahu ukládány
-        <strong>lokálně v zařízení uživatele</strong>.
+        WorkRota používá Google Play Billing a RevenueCat k zobrazení nabídky Pro, zpracování nákupu,
+        ověření nároku a obnovení předchozího nákupu. Při tom mohou být mimo zařízení zpracovány
+        pseudonymní identifikátor zákazníka RevenueCat, historie a stav nákupu, identifikátor produktu,
+        stav předplatného a související technické údaje. Toto zpracování je nutné pro nákup a správu Pro.
       </p>
       <p>
-        V případě použití reklamní služby Google AdMob mohou být některé technické a reklamní údaje zpracovávány
-        společností Google a jejími partnery mimo zařízení uživatele, a to za účelem doručování reklam,
-        měření výkonu, prevence podvodů a souvisejících provozních účelů.
-      </p>
-
-      <h2>4. Reklamy a Google AdMob</h2>
-      <p>
-        Aplikace může obsahovat reklamy zobrazované prostřednictvím služby <strong>Google AdMob</strong>.
-        Reklamy mohou být kontextové, nepersonalizované nebo personalizované podle dostupných nastavení,
-        typu zařízení, regionu a uděleného souhlasu uživatele.
-      </p>
-      <p>
-        Zpracování dat v souvislosti s reklamami se řídí také zásadami společnosti Google. Více informací naleznete zde:
-        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Zásady ochrany soukromí Google</a>.
+        WorkRota neposílá RevenueCat rozpis, mzdu, poznámky, obsah dokumentů, kalendářní události ani
+        obsah oznámení. Přenos mezi aplikací a těmito službami je šifrován při přenosu.
       </p>
 
-      <h2>5. Sdílení dat s třetími stranami</h2>
+      <h2>6. Volitelná produktová analytika</h2>
       <p>
-        Provozovatel aplikace neprodává osobní údaje uživatelů třetím stranám.
-        Pokud je v aplikaci aktivní Google AdMob, mohou být vybrané technické a reklamní údaje sdíleny se společností Google
-        a případně s reklamními partnery zapojenými do zobrazování reklam, měření a prevence podvodů.
+        Analytika je ve výchozím stavu vypnutá. Pokud ji zapnete v nastavení, WorkRota odešle do
+        RevenueCat pouze pseudonymní souhrnné čítače používání funkcí, aktivace a nákupního funnelu,
+        které jsou přiřazené k identifikátoru zákazníka RevenueCat. Neodesílá obsah rozpisu, mzdy,
+        poznámek, dokumentů, kalendáře ani oznámení. Souhlas můžete kdykoli odvolat vypnutím této
+        volby; tím se zastaví budoucí odesílání čítačů WorkRota. Tato volba neřídí automatické
+        technické metriky ML Kit popsané výše.
       </p>
 
-      <h2>6. Souhlas, personalizace reklam a volby uživatele</h2>
-      <p>
-        Pokud je to podle platných pravidel nebo právních předpisů vyžadováno, může aplikace před zobrazením
-        personalizovaných reklam požádat uživatele o souhlas se zpracováním údajů prostřednictvím příslušného consent dialogu.
-      </p>
-      <p>Uživatel může mít možnost:</p>
+      <h2>7. Účely a právní důvody</h2>
       <ul>
-        <li>udělit nebo odmítnout souhlas s personalizovanými reklamami,</li>
-        <li>změnit své preference ochrany soukromí v rámci aplikace, pokud je tato funkce dostupná,</li>
-        <li>upravit reklamní nastavení zařízení nebo Google účtu.</li>
+        <li>Lokální data se zpracovávají, abyste mohli používat funkce, které sami nastavíte.</li>
+        <li>Nákupní údaje se zpracovávají pro poskytnutí a správu Pro na vaši žádost.</li>
+        <li>Volitelné souhrnné čítače se zpracovávají pouze s vaším souhlasem pro zlepšování aplikace.</li>
+      </ul>
+
+      <h2>8. Příjemci a mezinárodní zpracování</h2>
+      <p>
+        Údaje související s nákupem a volitelnou analytikou mohou zpracovávat Google a RevenueCat jako
+        poskytovatelé služeb. Google také zpracovává technické metriky ML Kit. Jejich zpracování a případné
+        mezinárodní přenosy se řídí jejich podmínkami a ochrannými mechanismy. Další informace:
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+        a <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.
+        Podrobnosti k ML Kit jsou v
+        <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener noreferrer">přehledu dat ML Kit</a>.
+      </p>
+
+      <h2>9. Uchování a smazání</h2>
+      <p>
+        Reset aplikace smaže hlavní místní databázi, ale automaticky nemaže dříve vytvořené exporty a
+        zálohy, události v kalendáři WorkRota ani bezpečnostní klíč uložený systémem. Tyto položky odstraňte
+        zvlášť v úložišti, kalendáři nebo nastavení zařízení. Kopie vybrané zálohy může po importu zůstat
+        v mezipaměti aplikace do jejího vyčištění systémem nebo uživatelem. Odinstalace obvykle odstraní
+        soukromé úložiště aplikace, nikoli soubory a kalendářní události, které jste vytvořili mimo něj.
+        Vypnutí produktové analytiky zastaví budoucí odesílání čítačů WorkRota. Doba uchování údajů u
+        Google Play, RevenueCat a Google ML Kit se řídí jejich pravidly a zákonnými povinnostmi.
+      </p>
+      <p>
+        O smazání záznamu zákazníka v RevenueCat můžete požádat na
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>. Pro nalezení záznamu
+        můžeme požádat o číslo objednávky Google Play začínající <code>GPA.</code>. Nikdy neposílejte
+        heslo, celé číslo platební karty ani bankovní přihlašovací údaje. Některé transakční záznamy
+        může Google nebo RevenueCat uchovat, pokud to vyžaduje zákon, účetnictví nebo ochrana proti podvodům.
+      </p>
+
+      <h2>10. Vaše volby a práva</h2>
+      <p>
+        Můžete upravit nebo smazat lokální data, odebrat oprávnění ke kalendáři či oznámením, vypnout
+        analytiku a spravovat předplatné v Google Play. V závislosti na platných předpisech můžete také
+        požádat o přístup, opravu, výmaz nebo omezení zpracování a podat stížnost u příslušného úřadu.
+      </p>
+
+      <h2>11. Děti, zabezpečení a změny zásad</h2>
+      <p>
+        WorkRota není cílená na děti mladší 13 let. Používáme přiměřená technická a organizační opatření,
+        ale žádný systém není zcela bez rizika. Zásady můžeme upravit při změně aplikace nebo služeb;
+        nové datum bude vždy uvedeno nahoře.
+      </p>
+      <a class="back" href="#top">↑ Jazyky</a>
+    </article>
+
+    <article class="policy" id="en" lang="en">
+      <h1>WorkRota – Privacy Policy</h1>
+      <p class="meta">Effective date: <strong>11 July 2026</strong></p>
+
+      <h2>1. Controller and contact</h2>
+      <p>
+        WorkRota is operated by <strong>Twinkik</strong>. For privacy questions, contact
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>.
+      </p>
+
+      <h2>2. Information stored and processed on your device</h2>
+      <p>WorkRota stores locally on your device:</p>
+      <ul>
+        <li>shift types, rotas, timesheets, work times, absences and notes;</li>
+        <li>pay rules, rates, premiums and gross-income estimates;</li>
+        <li>app, reminder, widget and local-backup settings.</li>
       </ul>
       <p>
-        Další informace o reklamních nastaveních Google jsou dostupné zde:
-        <a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer">Google My Ad Center</a>.
+        WorkRota has no first-party user accounts or cloud storage for your work data. It does not show
+        advertising and does not sell personal information.
       </p>
 
-      <h2>7. Účet a registrace</h2>
+      <h2>3. Photos and PDFs used for on-device recognition</h2>
       <p>
-        Aplikace <strong>nevyžaduje vytvoření uživatelského účtu</strong> ani registraci.
+        When you select a rota or payslip photo, screenshot or PDF, recognition runs on your device.
+        WorkRota does not upload the file or its complete recognised text to a server. An app-owned
+        temporary cache copy is deleted after processing, and the complete document and complete
+        recognised text are not retained after review. Your original file remains in the location you chose.
+      </p>
+      <p>
+        WorkRota uses the bundled Google ML Kit for recognition. The image and recognised text remain
+        on-device, but ML Kit automatically sends Google technical metrics: a per-installation identifier,
+        device and app information, performance and latency, input/output configuration and size, event
+        types and error codes. Google uses these metrics for ML Kit diagnostics and usage analytics.
       </p>
 
-      <h2>8. Notifikace</h2>
-      <p>
-        Pokud uživatel povolí oznámení, může aplikace využít systémové notifikace zařízení
-        k připomenutí nadcházející směny. Tato oznámení slouží pouze k fungování aplikace.
-      </p>
-
-      <h2>9. Doba uchování dat</h2>
-      <p>
-        Uživatelská data uložená lokálně zůstávají v zařízení uživatele, dokud je uživatel nesmaže,
-        neodinstaluje aplikaci nebo nevymaže její úložiště.
-      </p>
-      <p>
-        Údaje zpracovávané reklamními nebo analytickými systémy třetích stran se mohou řídit retenčními pravidly
-        těchto poskytovatelů.
-      </p>
-
-      <h2>10. Jak může uživatel data smazat</h2>
-      <p>Uživatel může data odstranit některým z těchto způsobů:</p>
+      <h2>4. Calendar, notifications, exports and backups</h2>
       <ul>
-        <li>smazáním dat přímo v aplikaci, pokud je tato možnost dostupná,</li>
-        <li>vymazáním dat aplikace v nastavení zařízení,</li>
-        <li>odinstalováním aplikace.</li>
+        <li>
+          With permission, Family Rota reads events from the calendar you select only to compare them
+          with your shifts on the device. Calendar events are not uploaded.
+        </li>
+        <li>Calendar sync writes shifts to a separate WorkRota calendar on your device.</li>
+        <li>System notifications and their actions are handled by your device and WorkRota.</li>
+        <li>
+          PDF, CSV and backup files are created locally. They leave the device only when you choose to
+          share or save them through the system interface.
+        </li>
+        <li>
+          Optional feedback opens an email draft that you can edit before sending. It contains only the
+          details you enter and the diagnostic summary shown to you, such as version, language, plan,
+          launch count, platform and time. Nothing is sent until you confirm the email yourself.
+        </li>
+      </ul>
+
+      <h2>5. Google Play and RevenueCat</h2>
+      <p>
+        WorkRota uses Google Play Billing and RevenueCat to show the Pro offer, process a purchase,
+        verify entitlement and restore an earlier purchase. This may process off-device a pseudonymous
+        RevenueCat customer identifier, purchase history and status, product identifier, subscription
+        status and related technical information. This processing is required to buy and manage Pro.
+      </p>
+      <p>
+        WorkRota does not send RevenueCat your rota, pay data, notes, document contents, calendar events
+        or notification contents. Data sent to these services is encrypted in transit.
+      </p>
+
+      <h2>6. Optional product analytics</h2>
+      <p>
+        Analytics is off by default. If you enable it in Settings, WorkRota sends RevenueCat only aggregate
+        pseudonymous counters about feature use, activation and the purchase funnel, associated with the
+        RevenueCat customer identifier. It does not send rota, pay, note, document, calendar or notification
+        content. You can withdraw consent at any time by turning the option off, which stops future WorkRota
+        counter uploads. This setting does not control the automatic ML Kit technical metrics described above.
+      </p>
+
+      <h2>7. Purposes and legal grounds</h2>
+      <ul>
+        <li>Local information is processed so that you can use the features you configure.</li>
+        <li>Purchase information is processed to provide and manage Pro at your request.</li>
+        <li>Optional aggregate counters are processed only with your consent to improve the app.</li>
+      </ul>
+
+      <h2>8. Recipients and international processing</h2>
+      <p>
+        Google and RevenueCat may process purchase and optional analytics information as service providers.
+        Google also processes ML Kit technical metrics. Their terms and safeguards govern their processing
+        and any international transfers. See the
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+        and <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.
+        ML Kit details are available in the
+        <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener noreferrer">ML Kit data disclosure guide</a>.
+      </p>
+
+      <h2>9. Retention and deletion</h2>
+      <p>
+        App reset deletes the main local database but does not automatically remove earlier exports and
+        backups, events in the WorkRota device calendar or the security key stored by the operating system.
+        Remove those separately in storage, calendar or device settings. A selected backup copy may remain
+        in the app cache after import until the operating system or user clears it. Uninstalling normally
+        removes private app storage, not files or calendar events you created outside it. Disabling product
+        analytics stops future WorkRota counter uploads. Google Play, RevenueCat and Google ML Kit retain
+        information under their own policies and legal obligations.
+      </p>
+      <p>
+        You may request deletion of the RevenueCat customer record by emailing
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>. To locate the record, we may
+        ask for the Google Play order number beginning with <code>GPA.</code>. Never send a password, full
+        card number or bank login details. Google or RevenueCat may retain transaction records where
+        required for law, accounting or fraud prevention.
+      </p>
+
+      <h2>10. Your choices and rights</h2>
+      <p>
+        You can edit or delete local data, remove calendar or notification permissions, disable analytics
+        and manage your subscription in Google Play. Depending on applicable law, you may also request
+        access, correction, deletion or restriction and complain to the competent data protection authority.
+      </p>
+
+      <h2>11. Children, security and policy changes</h2>
+      <p>
+        WorkRota is not directed to children under 13. We use reasonable technical and organisational
+        safeguards, although no system is risk-free. We may update this policy when the app or its services
+        change; the effective date will always appear above.
+      </p>
+      <a class="back" href="#top">↑ Languages</a>
+    </article>
+
+    <article class="policy" id="de" lang="de">
+      <h1>WorkRota – Datenschutzerklärung</h1>
+      <p class="meta">Gültig ab: <strong>11. Juli 2026</strong></p>
+
+      <h2>1. Verantwortlicher und Kontakt</h2>
+      <p>
+        WorkRota wird von <strong>Twinkik</strong> betrieben. Datenschutzanfragen richten Sie bitte an
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>.
+      </p>
+
+      <h2>2. Lokal gespeicherte und verarbeitete Daten</h2>
+      <p>WorkRota speichert auf Ihrem Gerät insbesondere:</p>
+      <ul>
+        <li>Schichtarten, Dienstpläne, Zeiterfassung, Arbeitszeiten, Abwesenheiten und Notizen,</li>
+        <li>Lohnregeln, Sätze, Zuschläge und Schätzungen des Bruttoeinkommens,</li>
+        <li>Einstellungen für App, Erinnerungen, Widgets und lokale Backups.</li>
       </ul>
       <p>
-        Reklamní identifikátor zařízení lze zpravidla resetovat nebo omezit v nastavení zařízení Android či Google účtu.
+        WorkRota hat keine eigenen Benutzerkonten und keinen Cloudspeicher für Ihre Arbeitsdaten. Die App
+        zeigt keine Werbung und verkauft keine personenbezogenen Daten.
       </p>
 
-      <h2>11. Děti a mladiství</h2>
+      <h2>3. Fotos und PDFs für die Erkennung auf dem Gerät</h2>
       <p>
-        Aplikace není určena dětem mladším 13 let a není cíleně navržena pro sběr údajů od dětí.
+        Wenn Sie ein Foto, einen Screenshot oder ein PDF eines Dienstplans oder einer Lohnabrechnung
+        auswählen, erfolgt die Erkennung auf Ihrem Gerät. WorkRota lädt weder die Datei noch den vollständigen
+        erkannten Text auf einen Server. Eine app-eigene temporäre Cache-Kopie wird nach der Verarbeitung
+        gelöscht; das vollständige Dokument und sein vollständiger erkannter Text werden nach der Prüfung
+        nicht aufbewahrt. Die Originaldatei bleibt am von Ihnen gewählten Speicherort.
       </p>
-
-      <h2>12. Zabezpečení</h2>
       <p>
-        Provozovatel se snaží používat přiměřená technická a organizační opatření na ochranu dat.
-        Přenos dat mezi aplikací a službami třetích stran může být zabezpečen standardními mechanismy těchto poskytovatelů.
+        WorkRota verwendet für die Erkennung das gebündelte Google ML Kit. Bild und erkannter Text bleiben
+        auf dem Gerät; ML Kit sendet Google jedoch automatisch technische Metriken: Installationskennung,
+        Geräte- und App-Informationen, Leistung und Latenz, Konfiguration und Größe von Ein- und Ausgabe,
+        Ereignistypen und Fehlercodes. Google nutzt sie für ML-Kit-Diagnose und Nutzungsanalyse.
       </p>
 
-      <h2>13. Změny těchto zásad</h2>
+      <h2>4. Kalender, Benachrichtigungen, Exporte und Backups</h2>
+      <ul>
+        <li>
+          Mit Ihrer Erlaubnis liest der Familienplan Ereignisse aus dem ausgewählten Kalender nur für den
+          lokalen Vergleich mit Ihren Schichten. Kalenderereignisse werden nicht hochgeladen.
+        </li>
+        <li>Die Kalendersynchronisierung schreibt Schichten in einen separaten WorkRota-Kalender auf dem Gerät.</li>
+        <li>Systembenachrichtigungen und ihre Aktionen werden vom Gerät und von WorkRota verarbeitet.</li>
+        <li>
+          PDF-, CSV- und Backup-Dateien entstehen lokal. Sie verlassen das Gerät nur, wenn Sie sie über den
+          Systemdialog teilen oder speichern.
+        </li>
+        <li>
+          Optionales Feedback öffnet einen E-Mail-Entwurf, den Sie vor dem Senden bearbeiten können. Er enthält
+          nur Ihre Eingaben und die angezeigte Diagnoseübersicht wie Version, Sprache, Plan, Startanzahl,
+          Plattform und Zeit. Ohne Ihre Bestätigung wird nichts gesendet.
+        </li>
+      </ul>
+
+      <h2>5. Google Play und RevenueCat</h2>
       <p>
-        Tyto zásady ochrany soukromí mohou být čas od času aktualizovány, například při změně funkcí aplikace,
-        reklamních služeb nebo při přidání nových nástrojů třetích stran. Aktuální verze bude vždy zveřejněna na této stránce.
+        WorkRota nutzt Google Play Billing und RevenueCat, um das Pro-Angebot anzuzeigen, Käufe abzuwickeln,
+        Berechtigungen zu prüfen und frühere Käufe wiederherzustellen. Dabei können außerhalb des Geräts eine
+        pseudonyme RevenueCat-Kundenkennung, Kaufhistorie und -status, Produktkennung, Abonnementstatus und
+        zugehörige technische Informationen verarbeitet werden. Diese Verarbeitung ist für Kauf und Verwaltung
+        von Pro erforderlich.
       </p>
-
-      <h2>14. Kontakt</h2>
       <p>
-        V případě dotazů ohledně ochrany soukromí nás můžete kontaktovat na:
-        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>
+        WorkRota sendet RevenueCat weder Dienstplan noch Lohndaten, Notizen, Dokumentinhalte,
+        Kalenderereignisse oder Benachrichtigungsinhalte. Die Übertragung ist verschlüsselt.
       </p>
 
-      <div class="footer">
-        <p>
-          Poznámka: Pokud do aplikace přidáte další služby třetích stran, například analytics, crash reporting,
-          cloudové ukládání nebo mediační reklamní partnery, je potřeba tyto zásady znovu odpovídajícím způsobem upravit.
-        </p>
-      </div>
-    </section>
+      <h2>6. Optionale Produktanalyse</h2>
+      <p>
+        Die Analyse ist standardmäßig ausgeschaltet. Wenn Sie sie in den Einstellungen aktivieren, sendet
+        WorkRota an RevenueCat nur pseudonyme, zusammengefasste Zähler zur Funktionsnutzung, Aktivierung und
+        zum Kaufablauf, die einer RevenueCat-Kundenkennung zugeordnet sind. Dienstplan-, Lohn-, Notiz-,
+        Dokument-, Kalender- und Benachrichtigungsinhalte werden nicht gesendet. Sie können Ihre Einwilligung
+        jederzeit durch Ausschalten widerrufen; künftige WorkRota-Zähler werden dann nicht mehr übertragen.
+        Diese Einstellung steuert nicht die oben beschriebenen automatischen technischen ML-Kit-Metriken.
+      </p>
+
+      <h2>7. Zwecke und Rechtsgrundlagen</h2>
+      <ul>
+        <li>Lokale Daten werden verarbeitet, damit Sie die von Ihnen eingerichteten Funktionen nutzen können.</li>
+        <li>Kaufdaten werden verarbeitet, um Pro auf Ihre Anfrage bereitzustellen und zu verwalten.</li>
+        <li>Optionale Zähler werden nur mit Ihrer Einwilligung zur Verbesserung der App verarbeitet.</li>
+      </ul>
+
+      <h2>8. Empfänger und internationale Verarbeitung</h2>
+      <p>
+        Google und RevenueCat können Kauf- und optionale Analysedaten als Dienstleister verarbeiten. Google
+        verarbeitet außerdem technische ML-Kit-Metriken. Für die Verarbeitung und mögliche internationale
+        Übermittlungen gelten deren Bedingungen und Schutzmaßnahmen.
+        Siehe <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google-Datenschutzerklärung</a>
+        und <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.
+        Details enthält die
+        <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener noreferrer">ML-Kit-Datenübersicht</a>.
+      </p>
+
+      <h2>9. Aufbewahrung und Löschung</h2>
+      <p>
+        Das Zurücksetzen der App löscht die lokale Hauptdatenbank, aber nicht automatisch frühere Exporte und
+        Backups, Einträge im WorkRota-Gerätekalender oder den vom Betriebssystem gespeicherten Sicherheitsschlüssel.
+        Entfernen Sie diese separat in Speicher, Kalender oder Geräteeinstellungen. Eine ausgewählte Backup-Kopie
+        kann nach dem Import im App-Cache verbleiben, bis System oder Nutzer ihn leeren. Eine Deinstallation
+        entfernt normalerweise privaten App-Speicher, nicht außerhalb erstellte Dateien oder Kalendereinträge.
+        Das Ausschalten der Produktanalyse stoppt künftige WorkRota-Zähler. Google Play, RevenueCat und Google
+        ML Kit bewahren Daten nach ihren Richtlinien und gesetzlichen Pflichten auf.
+      </p>
+      <p>
+        Die Löschung des RevenueCat-Kundendatensatzes können Sie per E-Mail an
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a> beantragen. Zum Auffinden können wir
+        nach der Google-Play-Bestellnummer mit <code>GPA.</code> fragen. Senden Sie niemals Passwörter,
+        vollständige Kartennummern oder Bankzugangsdaten. Gesetzlich, buchhalterisch oder zur Betrugsprävention
+        erforderliche Transaktionsdaten können weiter aufbewahrt werden.
+      </p>
+
+      <h2>10. Ihre Wahlmöglichkeiten und Rechte</h2>
+      <p>
+        Sie können lokale Daten ändern oder löschen, Kalender- oder Benachrichtigungsberechtigungen entziehen,
+        die Analyse deaktivieren und Ihr Abonnement in Google Play verwalten. Nach anwendbarem Recht können
+        Sie außerdem Auskunft, Berichtigung, Löschung oder Einschränkung verlangen und sich bei der zuständigen
+        Datenschutzbehörde beschweren.
+      </p>
+
+      <h2>11. Kinder, Sicherheit und Änderungen</h2>
+      <p>
+        WorkRota richtet sich nicht an Kinder unter 13 Jahren. Wir setzen angemessene technische und
+        organisatorische Maßnahmen ein, obwohl kein System risikofrei ist. Bei Änderungen der App oder ihrer
+        Dienste kann diese Erklärung aktualisiert werden; das gültige Datum steht stets oben.
+      </p>
+      <a class="back" href="#top">↑ Sprachen</a>
+    </article>
+
+    <article class="policy" id="pl" lang="pl">
+      <h1>WorkRota – Polityka prywatności</h1>
+      <p class="meta">Obowiązuje od: <strong>11 lipca 2026 r.</strong></p>
+
+      <h2>1. Administrator i kontakt</h2>
+      <p>
+        Operatorem WorkRota jest <strong>Twinkik</strong>. W sprawach prywatności napisz na
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>.
+      </p>
+
+      <h2>2. Dane przechowywane i przetwarzane na urządzeniu</h2>
+      <p>WorkRota zapisuje lokalnie na urządzeniu między innymi:</p>
+      <ul>
+        <li>typy zmian, grafiki, ewidencję czasu, godziny pracy, nieobecności i notatki,</li>
+        <li>reguły wynagrodzenia, stawki, dodatki i szacunki kwoty brutto,</li>
+        <li>ustawienia aplikacji, przypomnień, widżetów i lokalnych kopii zapasowych.</li>
+      </ul>
+      <p>
+        WorkRota nie ma własnych kont użytkowników ani chmury dla danych o pracy. Nie wyświetla reklam i nie
+        sprzedaje danych osobowych.
+      </p>
+
+      <h2>3. Zdjęcia i pliki PDF rozpoznawane na urządzeniu</h2>
+      <p>
+        Po wybraniu zdjęcia, zrzutu ekranu lub pliku PDF grafiku albo paska wynagrodzenia rozpoznawanie odbywa
+        się na urządzeniu. WorkRota nie przesyła pliku ani całego rozpoznanego tekstu na serwer. Tymczasowa kopia
+        należąca do aplikacji jest usuwana z pamięci podręcznej po przetworzeniu; pełny dokument i cały rozpoznany
+        tekst nie są zachowywane po weryfikacji. Oryginalny plik pozostaje w wybranym przez Ciebie miejscu.
+      </p>
+      <p>
+        Do rozpoznawania WorkRota używa dołączonego Google ML Kit. Obraz i rozpoznany tekst pozostają na
+        urządzeniu, ale ML Kit automatycznie wysyła Google dane techniczne: identyfikator instalacji, informacje
+        o urządzeniu i aplikacji, wydajność i opóźnienia, konfigurację oraz rozmiar wejścia/wyjścia, typy zdarzeń
+        i kody błędów. Google używa ich do diagnostyki i analizy użycia ML Kit.
+      </p>
+
+      <h2>4. Kalendarz, powiadomienia, eksporty i kopie zapasowe</h2>
+      <ul>
+        <li>
+          Po udzieleniu zgody Plan rodzinny odczytuje wydarzenia z wybranego kalendarza wyłącznie do lokalnego
+          porównania ze zmianami. Wydarzenia nie są przesyłane.
+        </li>
+        <li>Synchronizacja zapisuje zmiany w osobnym kalendarzu WorkRota na urządzeniu.</li>
+        <li>Powiadomienia systemowe i ich akcje obsługują urządzenie oraz WorkRota.</li>
+        <li>
+          Pliki PDF, CSV i kopie zapasowe powstają lokalnie. Opuszczają urządzenie tylko wtedy, gdy samodzielnie
+          je udostępnisz lub zapiszesz przez interfejs systemowy.
+        </li>
+        <li>
+          Opcjonalna opinia otwiera szkic e-maila, który można zmienić przed wysłaniem. Zawiera tylko wpisane
+          przez Ciebie dane i pokazane podsumowanie diagnostyczne, np. wersję, język, plan, liczbę uruchomień,
+          platformę i czas. Nic nie jest wysyłane bez Twojego potwierdzenia.
+        </li>
+      </ul>
+
+      <h2>5. Google Play i RevenueCat</h2>
+      <p>
+        WorkRota korzysta z Google Play Billing i RevenueCat, aby wyświetlać ofertę Pro, obsługiwać zakup,
+        weryfikować uprawnienie i przywracać wcześniejszy zakup. Poza urządzeniem mogą być przetwarzane:
+        pseudonimowy identyfikator klienta RevenueCat, historia i status zakupu, identyfikator produktu,
+        status subskrypcji oraz powiązane dane techniczne. Jest to niezbędne do zakupu i zarządzania Pro.
+      </p>
+      <p>
+        WorkRota nie wysyła do RevenueCat grafiku, danych o wynagrodzeniu, notatek, treści dokumentów,
+        wydarzeń kalendarza ani treści powiadomień. Dane są szyfrowane podczas przesyłania.
+      </p>
+
+      <h2>6. Opcjonalna analityka produktu</h2>
+      <p>
+        Analityka jest domyślnie wyłączona. Po jej włączeniu WorkRota wysyła do RevenueCat wyłącznie pseudonimowe,
+        zbiorcze liczniki użycia funkcji, aktywacji i procesu zakupu, powiązane z identyfikatorem klienta RevenueCat.
+        Nie wysyła treści grafiku, wynagrodzenia, notatek, dokumentów, kalendarza ani powiadomień. Zgodę można
+        wycofać w dowolnym momencie; zatrzyma to przyszłe liczniki WorkRota. Ustawienie nie steruje automatycznymi
+        metrykami technicznymi ML Kit opisanymi powyżej.
+      </p>
+
+      <h2>7. Cele i podstawy przetwarzania</h2>
+      <ul>
+        <li>Dane lokalne są przetwarzane, aby udostępnić skonfigurowane przez Ciebie funkcje.</li>
+        <li>Dane zakupowe są przetwarzane w celu dostarczenia i zarządzania Pro na Twoje żądanie.</li>
+        <li>Opcjonalne liczniki są przetwarzane za Twoją zgodą w celu ulepszania aplikacji.</li>
+      </ul>
+
+      <h2>8. Odbiorcy i przetwarzanie międzynarodowe</h2>
+      <p>
+        Google i RevenueCat mogą przetwarzać dane zakupowe i opcjonalne dane analityczne jako dostawcy usług.
+        Google przetwarza też techniczne metryki ML Kit. Ich zasady i zabezpieczenia regulują przetwarzanie oraz
+        ewentualne transfery międzynarodowe. Zobacz
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Politykę prywatności Google</a>
+        i <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Politykę prywatności RevenueCat</a>.
+        Szczegóły zawiera
+        <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener noreferrer">opis danych ML Kit</a>.
+      </p>
+
+      <h2>9. Przechowywanie i usuwanie</h2>
+      <p>
+        Reset aplikacji usuwa główną lokalną bazę, ale nie usuwa automatycznie wcześniejszych eksportów i kopii
+        zapasowych, wpisów w kalendarzu WorkRota ani klucza bezpieczeństwa zapisanego przez system. Usuń je osobno
+        w pamięci, kalendarzu lub ustawieniach urządzenia. Kopia wybranej kopii zapasowej może po imporcie pozostać
+        w pamięci podręcznej do jej wyczyszczenia. Odinstalowanie zwykle usuwa prywatną pamięć aplikacji, ale nie
+        pliki i kalendarz utworzone poza nią. Wyłączenie analityki produktu zatrzymuje przyszłe liczniki WorkRota.
+        Google Play, RevenueCat i Google ML Kit przechowują dane według swoich zasad i obowiązków prawnych.
+      </p>
+      <p>
+        O usunięcie rekordu klienta RevenueCat można poprosić przez
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>. Aby go odnaleźć, możemy poprosić
+        o numer zamówienia Google Play zaczynający się od <code>GPA.</code>. Nigdy nie wysyłaj hasła, pełnego
+        numeru karty ani danych logowania do banku. Dane transakcyjne wymagane prawem, księgowością lub ochroną
+        przed oszustwami mogą być przechowywane dłużej.
+      </p>
+
+      <h2>10. Twoje wybory i prawa</h2>
+      <p>
+        Możesz zmienić lub usunąć dane lokalne, odebrać uprawnienia kalendarza lub powiadomień, wyłączyć
+        analitykę i zarządzać subskrypcją w Google Play. Zależnie od prawa możesz też zażądać dostępu,
+        sprostowania, usunięcia lub ograniczenia przetwarzania oraz złożyć skargę do właściwego organu.
+      </p>
+
+      <h2>11. Dzieci, bezpieczeństwo i zmiany polityki</h2>
+      <p>
+        WorkRota nie jest kierowana do dzieci poniżej 13 lat. Stosujemy odpowiednie zabezpieczenia techniczne
+        i organizacyjne, choć żaden system nie jest całkowicie wolny od ryzyka. Polityka może zostać zmieniona
+        wraz z aplikacją lub usługami; aktualna data zawsze znajduje się u góry.
+      </p>
+      <a class="back" href="#top">↑ Języki</a>
+    </article>
+
+    <article class="policy" id="sk" lang="sk">
+      <h1>WorkRota – Zásady ochrany súkromia</h1>
+      <p class="meta">Účinné od: <strong>11. 7. 2026</strong></p>
+
+      <h2>1. Prevádzkovateľ a kontakt</h2>
+      <p>
+        Prevádzkovateľom WorkRota je <strong>Twinkik</strong>. V otázkach súkromia nás kontaktujte na
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>.
+      </p>
+
+      <h2>2. Údaje uložené a spracované v zariadení</h2>
+      <p>WorkRota ukladá lokálne v zariadení najmä:</p>
+      <ul>
+        <li>typy zmien, rozpisy, dochádzku, pracovné časy, neprítomnosti a poznámky,</li>
+        <li>mzdové pravidlá, sadzby, príplatky a odhady hrubého príjmu,</li>
+        <li>nastavenia aplikácie, pripomenutí, widgetov a lokálnych záloh.</li>
+      </ul>
+      <p>
+        WorkRota nemá vlastné používateľské účty ani cloudové úložisko pracovných údajov. Nezobrazuje reklamy
+        a nepredáva osobné údaje.
+      </p>
+
+      <h2>3. Fotografie a PDF rozpoznávané v zariadení</h2>
+      <p>
+        Po výbere fotografie, snímky obrazovky alebo PDF rozpisu či výplatnej pásky prebehne rozpoznávanie
+        v zariadení. WorkRota neodosiela súbor ani úplný rozpoznaný text na server. Dočasnú kópiu vo vyrovnávacej
+        pamäti, ktorú vytvorila aplikácia, po spracovaní odstráni; celý dokument ani jeho úplný rozpoznaný text
+        sa po kontrole neuchováva. Pôvodný súbor zostáva vo vami zvolenom umiestnení.
+      </p>
+      <p>
+        WorkRota používa na rozpoznávanie pribalené Google ML Kit. Obraz a rozpoznaný text zostávajú v zariadení,
+        ML Kit však automaticky odosiela Googlu technické metriky: identifikátor inštalácie, informácie o zariadení
+        a aplikácii, výkon a latenciu, konfiguráciu a veľkosť vstupu/výstupu, typy udalostí a chybové kódy. Google
+        ich používa na diagnostiku a analýzu používania ML Kit.
+      </p>
+
+      <h2>4. Kalendár, oznámenia, exporty a zálohy</h2>
+      <ul>
+        <li>
+          Rodinný plán po udelení oprávnenia číta udalosti z vybraného kalendára len na lokálne porovnanie
+          so zmenami. Udalosti sa neodosielajú.
+        </li>
+        <li>Synchronizácia zapisuje zmeny do samostatného kalendára WorkRota v zariadení.</li>
+        <li>Systémové oznámenia a ich akcie spracúva zariadenie a WorkRota.</li>
+        <li>
+          PDF, CSV a zálohy sa vytvárajú lokálne. Zariadenie opustia len vtedy, keď ich sami zdieľate alebo
+          uložíte cez systémové rozhranie.
+        </li>
+        <li>
+          Voliteľná spätná väzba otvorí koncept e-mailu, ktorý môžete pred odoslaním upraviť. Obsahuje len vaše
+          údaje a zobrazený diagnostický súhrn, napríklad verziu, jazyk, plán, počet spustení, platformu a čas.
+          Nič sa neodošle bez vášho potvrdenia.
+        </li>
+      </ul>
+
+      <h2>5. Google Play a RevenueCat</h2>
+      <p>
+        WorkRota používa Google Play Billing a RevenueCat na zobrazenie ponuky Pro, spracovanie nákupu,
+        overenie nároku a obnovenie predchádzajúceho nákupu. Mimo zariadenia sa môže spracovať pseudonymný
+        identifikátor zákazníka RevenueCat, história a stav nákupu, identifikátor produktu, stav predplatného
+        a súvisiace technické údaje. Toto spracovanie je potrebné na nákup a správu Pro.
+      </p>
+      <p>
+        WorkRota neposiela RevenueCat rozpis, mzdu, poznámky, obsah dokumentov, kalendárne udalosti ani obsah
+        oznámení. Prenos údajov je šifrovaný.
+      </p>
+
+      <h2>6. Voliteľná produktová analytika</h2>
+      <p>
+        Analytika je predvolene vypnutá. Po zapnutí WorkRota odošle do RevenueCat len pseudonymné súhrnné
+        počítadlá používania funkcií, aktivácie a nákupného procesu, spojené s identifikátorom zákazníka RevenueCat.
+        Neodosiela obsah rozpisu, mzdy, poznámok, dokumentov, kalendára ani oznámení. Súhlas môžete kedykoľvek
+        odvolať; zastaví sa tým budúce odosielanie počítadiel WorkRota. Toto nastavenie neovláda automatické
+        technické metriky ML Kit opísané vyššie.
+      </p>
+
+      <h2>7. Účely a právne dôvody</h2>
+      <ul>
+        <li>Lokálne údaje sa spracúvajú, aby ste mohli používať nastavené funkcie.</li>
+        <li>Nákupné údaje sa spracúvajú na poskytnutie a správu Pro na vašu žiadosť.</li>
+        <li>Voliteľné počítadlá sa spracúvajú s vaším súhlasom na zlepšovanie aplikácie.</li>
+      </ul>
+
+      <h2>8. Príjemcovia a medzinárodné spracovanie</h2>
+      <p>
+        Google a RevenueCat môžu spracúvať nákupné a voliteľné analytické údaje ako poskytovatelia služieb.
+        Google tiež spracúva technické metriky ML Kit. Ich podmienky a ochranné mechanizmy upravujú spracovanie
+        aj možné medzinárodné prenosy. Pozrite si
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Zásady ochrany súkromia Google</a>
+        a <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">Zásady ochrany súkromia RevenueCat</a>.
+        Podrobnosti sú v
+        <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener noreferrer">prehľade údajov ML Kit</a>.
+      </p>
+
+      <h2>9. Uchovávanie a vymazanie</h2>
+      <p>
+        Reset aplikácie vymaže hlavnú lokálnu databázu, ale automaticky neodstráni staršie exporty a zálohy,
+        udalosti v kalendári WorkRota ani bezpečnostný kľúč uložený systémom. Odstráňte ich osobitne v úložisku,
+        kalendári alebo nastaveniach zariadenia. Kópia vybranej zálohy môže po importe zostať vo vyrovnávacej
+        pamäti, kým ju systém alebo používateľ nevymaže. Odinštalovanie zvyčajne odstráni súkromné úložisko aplikácie,
+        nie súbory a udalosti vytvorené mimo neho. Vypnutie produktovej analytiky zastaví budúce počítadlá WorkRota.
+        Google Play, RevenueCat a Google ML Kit uchovávajú údaje podľa svojich pravidiel a zákonných povinností.
+      </p>
+      <p>
+        O vymazanie záznamu zákazníka RevenueCat môžete požiadať na
+        <a href="mailto:patrikchvojka@gmail.com">patrikchvojka@gmail.com</a>. Na jeho vyhľadanie môžeme požiadať
+        o číslo objednávky Google Play začínajúce <code>GPA.</code>. Nikdy neposielajte heslo, celé číslo karty
+        ani bankové prihlasovacie údaje. Transakčné záznamy potrebné zo zákona, na účtovníctvo alebo prevenciu
+        podvodov môžu byť uchované dlhšie.
+      </p>
+
+      <h2>10. Vaše možnosti a práva</h2>
+      <p>
+        Môžete upraviť alebo vymazať lokálne údaje, odobrať oprávnenie kalendára či oznámení, vypnúť analytiku
+        a spravovať predplatné v Google Play. Podľa platného práva môžete tiež požiadať o prístup, opravu,
+        vymazanie alebo obmedzenie spracovania a podať sťažnosť príslušnému úradu.
+      </p>
+
+      <h2>11. Deti, bezpečnosť a zmeny zásad</h2>
+      <p>
+        WorkRota nie je určená deťom mladším ako 13 rokov. Používame primerané technické a organizačné
+        opatrenia, hoci žiadny systém nie je úplne bez rizika. Zásady môžeme aktualizovať pri zmene aplikácie
+        alebo služieb; aktuálny dátum bude vždy uvedený hore.
+      </p>
+      <a class="back" href="#top">↑ Jazyky</a>
+    </article>
   </main>
 </body>
 </html>
+
