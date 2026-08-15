@@ -128,7 +128,7 @@
   <main class="wrap" id="top">
     <header class="hero">
       <h1>WorkRota – Privacy Policy</h1>
-      <p class="meta">Effective date: <strong>12 July 2026</strong></p>
+      <p class="meta">Effective date: <strong>16 August 2026</strong></p>
       <p>
         WorkRota is a personal shift calendar. This page explains which information stays on your
         device, what Google Play, RevenueCat and Google ML Kit process, and the choices available to you.
@@ -144,7 +144,7 @@
 
     <article class="policy" id="cs" lang="cs">
       <h1>WorkRota – Zásady ochrany soukromí</h1>
-      <p class="meta">Účinné od: <strong>12. 7. 2026</strong></p>
+      <p class="meta">Účinné od: <strong>16. 8. 2026</strong></p>
 
       <h2>1. Provozovatel a kontakt</h2>
       <p>
@@ -196,6 +196,13 @@
           nasdílíte nebo uložíte prostřednictvím systémového dialogu.
         </li>
         <li>
+          Volitelné soukromé sdílení vytvoří ověřený HTTPS odkaz. Zašifrovaný obsah je v cestě
+          odkazu a může se objevit v technických záznamech hostingu GitHub Pages; dešifrovací klíč zůstává
+          ve fragmentu za znakem <code>#</code>, který se v běžném HTTP požadavku serveru neposílá.
+          WorkRota neodesílá na hosting nezašifrovaný rozpis ani mzdu. Celý odkaz včetně klíče uvidí
+          pouze aplikace nebo osoba, se kterou jej sami nasdílíte.
+        </li>
+        <li>
           Dobrovolná zpětná vazba otevře koncept e-mailu, který můžete před odesláním upravit. Obsahuje
           jen údaje, které sami uvedete, a zobrazenou diagnostiku jako verzi, jazyk, plán, počet spuštění,
           platformu a čas. Nic se neodešle, dokud e-mail sami nepotvrdíte.
@@ -209,6 +216,25 @@
         dobu spánku za vámi zvolených 7, 14 nebo 30 dní. Aplikace nežádá o přístup na pozadí ani
         o zápis zdravotních údajů, souhrn spánku nikam neodesílá ani nesdílí a nepoužívá jej jako
         zdravotní posouzení. Přístup můžete kdykoli odebrat v nastavení Health Connect.
+      </p>
+
+      <h2>4b. Volitelná synchronizace s Wear OS</h2>
+      <p>
+        Modul Wear OS je ve výchozím stavu vypnutý a vyžaduje WorkRota Pro. Po zapnutí vytvoří trvalý
+        DataItem a synchronizuje mezi spárovanými zařízeními souhrn nejvýše sedmi příštích směn. U
+        každé směny obsahuje jen datum, název, krátký kód a čas začátku a konce; datový balíček dále
+        obsahuje verzi protokolu, stav modulu, zvolený jazyk a regionální formát aplikace, čas a pořadové
+        číslo synchronizace a náhodný synchronizační token pro danou instalaci. Služby Google Play
+        přidělují identifikátor zdrojového zařízení; oba identifikátory slouží jen k odmítnutí zastaralých
+        aktualizací. Neobsahuje mzdu, sazby, poznámky ani identifikátory směn,
+        cyklů nebo jiné provozní identifikátory. DataItem zůstává
+        dostupný, dokud není nahrazen nebo smazán, a synchronizuje se mezi zařízeními ve Wear OS síti
+        uživatele. Služby Google Play jej mohou zálohovat nebo synchronizovat přes servery Google i při
+        dostupném Bluetooth; cloudový přenos je koncově šifrovaný a data může číst pouze stejně
+        podepsaná aplikace WorkRota. WorkRota pro tento přenos nepoužívá vlastní cloudový účet ani
+        backend. Po vypnutí modulu telefon odešle minimální reset tvořený verzí protokolu, vypnutým
+        stavem, časem a pořadovým číslem synchronizace a synchronizačním tokenem; po doručení nahradí
+        dřívější údaje o směnách.
       </p>
 
       <h2>5. Google Play a RevenueCat</h2>
@@ -229,7 +255,9 @@
         RevenueCat pouze pseudonymní souhrnné čítače používání funkcí, aktivace a nákupního funnelu,
         které jsou přiřazené k identifikátoru zákazníka RevenueCat. Neodesílá obsah rozpisu, mzdy,
         poznámek, dokumentů, kalendáře ani oznámení. Souhlas můžete kdykoli odvolat vypnutím této
-        volby; tím se zastaví budoucí odesílání čítačů WorkRota. Tato volba neřídí automatické
+        volby. Aplikace přestane přidávat nové čítače, označí všechny analytické atributy WorkRota
+        v cache RevenueCat SDK k odstranění a požádá SDK o synchronizaci. Již probíhající požadavek
+        poskytovatele ani dříve přijaté údaje tím nelze zpětně odvolat. Tato volba neřídí automatické
         technické metriky ML Kit popsané výše.
       </p>
 
@@ -258,8 +286,9 @@
         zvlášť v úložišti, kalendáři nebo nastavení zařízení. Kopie vybrané zálohy může po importu zůstat
         v mezipaměti aplikace do jejího vyčištění systémem nebo uživatelem. Odinstalace obvykle odstraní
         soukromé úložiště aplikace, nikoli soubory a kalendářní události, které jste vytvořili mimo něj.
-        Vypnutí produktové analytiky zastaví budoucí odesílání čítačů WorkRota. Doba uchování údajů u
-        Google Play, RevenueCat a Google ML Kit se řídí jejich pravidly a zákonnými povinnostmi.
+        Vypnutí produktové analytiky zastaví nové zápisy čítačů WorkRota a vyžádá odstranění analytických
+        atributů z RevenueCat SDK. Údaje již v přenosu nebo dříve přijaté Google Play, RevenueCat či
+        Google ML Kit se uchovávají podle jejich pravidel a zákonných povinností.
       </p>
       <p>
         O smazání záznamu zákazníka v RevenueCat můžete požádat na
@@ -287,7 +316,7 @@
 
     <article class="policy" id="en" lang="en">
       <h1>WorkRota – Privacy Policy</h1>
-      <p class="meta">Effective date: <strong>12 July 2026</strong></p>
+      <p class="meta">Effective date: <strong>16 August 2026</strong></p>
 
       <h2>1. Controller and contact</h2>
       <p>
@@ -334,6 +363,13 @@
           share or save them through the system interface.
         </li>
         <li>
+          Optional private sharing creates a verified HTTPS link. Its encrypted payload is in the URL path
+          and may appear in technical GitHub Pages hosting logs; the decryption key remains in the fragment
+          after <code>#</code>, which is not sent to the server in a normal HTTP request. WorkRota does not
+          upload the unencrypted rota or pay data to that host. The full link, including its key, is visible
+          only to the app or person with whom you choose to share it.
+        </li>
+        <li>
           Optional feedback opens an email draft that you can edit before sending. It contains only the
           details you enter and the diagnostic summary shown to you, such as version, language, plan,
           launch count, platform and time. Nothing is sent until you confirm the email yourself.
@@ -347,6 +383,24 @@
         30-day period you select. WorkRota does not request background access, write health data, upload
         or share the sleep summary, or use it as a medical assessment. You can revoke access at any time
         in Health Connect settings.
+      </p>
+
+      <h2>4b. Optional Wear OS synchronisation</h2>
+      <p>
+        The Wear OS module is off by default and requires WorkRota Pro. Once enabled, it creates a
+        persistent DataItem and synchronises a summary of at most seven upcoming shifts across paired
+        devices. For each shift, it contains only the date, name, short code, and start and end time; the
+        payload also contains the protocol version, module state, selected app language, regional
+        formatting locale, sync timestamp, monotonic generation and a random per-install synchronisation
+        token. Google Play services supplies a paired-device source ID; both identifiers are used only to
+        reject stale updates. Earnings, pay rates, notes and rota or business IDs are excluded. The DataItem remains
+        available until replaced or deleted and is synchronised across
+        devices in the user's Wear OS network. Google Play services may back it up or synchronise it
+        through Google-owned servers even while Bluetooth is available; cloud transfer is end-to-end
+        encrypted and readable only by the matching signed WorkRota app. WorkRota uses no first-party
+        cloud account or backend for this transfer. Turning the module off sends a minimal reset containing
+        only the protocol version, disabled state, sync timestamp, generation and synchronisation token;
+        once delivered, it replaces earlier shift data.
       </p>
 
       <h2>5. Google Play and RevenueCat</h2>
@@ -366,8 +420,10 @@
         Analytics is off by default. If you enable it in Settings, WorkRota sends RevenueCat only aggregate
         pseudonymous counters about feature use, activation and the purchase funnel, associated with the
         RevenueCat customer identifier. It does not send rota, pay, note, document, calendar or notification
-        content. You can withdraw consent at any time by turning the option off, which stops future WorkRota
-        counter uploads. This setting does not control the automatic ML Kit technical metrics described above.
+        content. You can withdraw consent at any time by turning the option off. The app stops adding new
+        counters, marks every WorkRota analytics attribute in the RevenueCat SDK cache for deletion and asks
+        the SDK to synchronise it. This cannot recall a provider request already in flight or data received
+        earlier. This setting does not control the automatic ML Kit technical metrics described above.
       </p>
 
       <h2>7. Purposes and legal grounds</h2>
@@ -395,8 +451,9 @@
         Remove those separately in storage, calendar or device settings. A selected backup copy may remain
         in the app cache after import until the operating system or user clears it. Uninstalling normally
         removes private app storage, not files or calendar events you created outside it. Disabling product
-        analytics stops future WorkRota counter uploads. Google Play, RevenueCat and Google ML Kit retain
-        information under their own policies and legal obligations.
+        analytics stops new WorkRota counter writes and requests deletion of its analytics attributes from
+        the RevenueCat SDK. Information already in transit or previously received by Google Play, RevenueCat
+        or Google ML Kit is retained under their own policies and legal obligations.
       </p>
       <p>
         You may request deletion of the RevenueCat customer record by emailing
@@ -424,7 +481,7 @@
 
     <article class="policy" id="de" lang="de">
       <h1>WorkRota – Datenschutzerklärung</h1>
-      <p class="meta">Gültig ab: <strong>12. Juli 2026</strong></p>
+      <p class="meta">Gültig ab: <strong>16. August 2026</strong></p>
 
       <h2>1. Verantwortlicher und Kontakt</h2>
       <p>
@@ -472,6 +529,13 @@
           Systemdialog teilen oder speichern.
         </li>
         <li>
+          Die optionale private Freigabe erstellt einen verifizierten HTTPS-Link. Die verschlüsselte Nutzlast
+          steht im URL-Pfad und kann in technischen Hosting-Protokollen von GitHub Pages erscheinen; der
+          Entschlüsselungsschlüssel bleibt im Fragment hinter <code>#</code>, das bei einer normalen HTTP-Anfrage
+          nicht an den Server gesendet wird. WorkRota lädt weder den unverschlüsselten Dienstplan noch Lohndaten
+          zu diesem Host hoch. Den vollständigen Link samt Schlüssel sieht nur die von Ihnen gewählte App oder Person.
+        </li>
+        <li>
           Optionales Feedback öffnet einen E-Mail-Entwurf, den Sie vor dem Senden bearbeiten können. Er enthält
           nur Ihre Eingaben und die angezeigte Diagnoseübersicht wie Version, Sprache, Plan, Startanzahl,
           Plattform und Zeit. Ohne Ihre Bestätigung wird nichts gesendet.
@@ -486,6 +550,26 @@
         lesen. WorkRota fordert keinen Hintergrundzugriff an, schreibt keine Gesundheitsdaten, lädt
         die Schlafübersicht nicht hoch, gibt sie nicht weiter und verwendet sie nicht als medizinische
         Beurteilung. Sie können den Zugriff jederzeit in Health Connect widerrufen.
+      </p>
+
+      <h2>4b. Optionale Wear-OS-Synchronisierung</h2>
+      <p>
+        Das Wear-OS-Modul ist standardmäßig ausgeschaltet und erfordert WorkRota Pro. Nach der Aktivierung
+        erstellt es ein dauerhaftes DataItem und synchronisiert eine Übersicht von höchstens sieben
+        bevorstehenden Schichten mit gekoppelten Geräten. Pro Schicht enthält sie nur Datum, Name, Kürzel
+        sowie Start- und Endzeit; das Datenpaket enthält außerdem Protokollversion, Modulstatus, gewählte
+        App-Sprache und regionale Formatierung, Synchronisierungszeitpunkt, monotone Synchronisationsnummer
+        und ein zufälliges installationsgebundenes Synchronisationstoken. Google Play-Dienste vergeben eine
+        Quellgeräte-Kennung; beide Kennungen dienen nur zum Abweisen veralteter Aktualisierungen.
+        Lohn, Sätze, Notizen sowie Schicht-, Zyklus- und andere betriebliche Kennungen
+        sind ausgeschlossen. Das DataItem bleibt bis zum Ersetzen oder Löschen verfügbar
+        und wird zwischen Geräten im Wear-OS-Netzwerk des Nutzers synchronisiert. Google Play-Dienste können
+        es auch bei verfügbarem Bluetooth über Google-Server sichern oder synchronisieren;
+        Cloud-Übertragungen sind Ende-zu-Ende verschlüsselt und nur für die gleich signierte WorkRota-App
+        lesbar. WorkRota nutzt dafür kein eigenes Cloud-Konto oder Backend. Beim Ausschalten sendet das
+        Telefon einen minimalen Reset aus Protokollversion, ausgeschaltetem Status,
+        Synchronisierungszeitpunkt, monotoner Synchronisationsnummer und Synchronisationstoken; nach der
+        Zustellung ersetzt er frühere Schichtdaten.
       </p>
 
       <h2>5. Google Play und RevenueCat</h2>
@@ -507,7 +591,9 @@
         WorkRota an RevenueCat nur pseudonyme, zusammengefasste Zähler zur Funktionsnutzung, Aktivierung und
         zum Kaufablauf, die einer RevenueCat-Kundenkennung zugeordnet sind. Dienstplan-, Lohn-, Notiz-,
         Dokument-, Kalender- und Benachrichtigungsinhalte werden nicht gesendet. Sie können Ihre Einwilligung
-        jederzeit durch Ausschalten widerrufen; künftige WorkRota-Zähler werden dann nicht mehr übertragen.
+        jederzeit durch Ausschalten widerrufen. Die App fügt keine neuen Zähler mehr hinzu, markiert alle
+        WorkRota-Analyseattribute im Cache des RevenueCat SDK zum Löschen und fordert die Synchronisierung an.
+        Bereits laufende Anbieteranfragen oder früher empfangene Daten lassen sich dadurch nicht zurückrufen.
         Diese Einstellung steuert nicht die oben beschriebenen automatischen technischen ML-Kit-Metriken.
       </p>
 
@@ -536,8 +622,9 @@
         Entfernen Sie diese separat in Speicher, Kalender oder Geräteeinstellungen. Eine ausgewählte Backup-Kopie
         kann nach dem Import im App-Cache verbleiben, bis System oder Nutzer ihn leeren. Eine Deinstallation
         entfernt normalerweise privaten App-Speicher, nicht außerhalb erstellte Dateien oder Kalendereinträge.
-        Das Ausschalten der Produktanalyse stoppt künftige WorkRota-Zähler. Google Play, RevenueCat und Google
-        ML Kit bewahren Daten nach ihren Richtlinien und gesetzlichen Pflichten auf.
+        Das Ausschalten der Produktanalyse stoppt neue WorkRota-Zähler und fordert die Löschung der
+        Analyseattribute aus dem RevenueCat SDK an. Bereits übertragene oder zuvor empfangene Daten bewahren
+        Google Play, RevenueCat und Google ML Kit nach ihren Richtlinien und gesetzlichen Pflichten auf.
       </p>
       <p>
         Die Löschung des RevenueCat-Kundendatensatzes können Sie per E-Mail an
@@ -566,7 +653,7 @@
 
     <article class="policy" id="pl" lang="pl">
       <h1>WorkRota – Polityka prywatności</h1>
-      <p class="meta">Obowiązuje od: <strong>12 lipca 2026 r.</strong></p>
+      <p class="meta">Obowiązuje od: <strong>16 sierpnia 2026 r.</strong></p>
 
       <h2>1. Administrator i kontakt</h2>
       <p>
@@ -613,6 +700,13 @@
           je udostępnisz lub zapiszesz przez interfejs systemowy.
         </li>
         <li>
+          Opcjonalne udostępnianie prywatne tworzy zweryfikowany link HTTPS. Zaszyfrowana treść znajduje się
+          w ścieżce adresu i może pojawić się w technicznych logach hostingu GitHub Pages; klucz odszyfrowujący
+          pozostaje we fragmencie po znaku <code>#</code>, który nie jest wysyłany do serwera w zwykłym żądaniu
+          HTTP. WorkRota nie przesyła do tego hosta niezaszyfrowanego grafiku ani danych o wynagrodzeniu. Pełny
+          link wraz z kluczem widzi tylko wybrana przez Ciebie aplikacja lub osoba.
+        </li>
+        <li>
           Opcjonalna opinia otwiera szkic e-maila, który można zmienić przed wysłaniem. Zawiera tylko wpisane
           przez Ciebie dane i pokazane podsumowanie diagnostyczne, np. wersję, język, plan, liczbę uruchomień,
           platformę i czas. Nic nie jest wysyłane bez Twojego potwierdzenia.
@@ -626,6 +720,25 @@
         czas snu z wybranego okresu 7, 14 lub 30 dni. WorkRota nie żąda dostępu w tle, nie zapisuje
         danych zdrowotnych, nie przesyła ani nie udostępnia podsumowania snu i nie używa go do oceny
         medycznej. Dostęp można w każdej chwili odebrać w ustawieniach Health Connect.
+      </p>
+
+      <h2>4b. Opcjonalna synchronizacja z Wear OS</h2>
+      <p>
+        Moduł Wear OS jest domyślnie wyłączony i wymaga WorkRota Pro. Po włączeniu tworzy trwały DataItem i
+        synchronizuje między sparowanymi urządzeniami podsumowanie najwyżej siedmiu najbliższych zmian. Dla
+        każdej zmiany zawiera ono tylko datę, nazwę, krótki kod oraz godzinę rozpoczęcia i zakończenia; pakiet
+        zawiera także wersję protokołu, stan modułu, wybrany język i regionalny format aplikacji, znacznik
+        czasu, monotoniczny numer synchronizacji oraz losowy token synchronizacji przypisany do instalacji.
+        Usługi Google Play nadają identyfikator urządzenia źródłowego; oba identyfikatory służą
+        wyłącznie do odrzucania nieaktualnych aktualizacji. Wynagrodzenie, stawki, notatki oraz
+        identyfikatory zmian, cykli i inne identyfikatory operacyjne są wykluczone.
+        DataItem pozostaje dostępny do zastąpienia lub usunięcia i synchronizuje się między urządzeniami w
+        sieci Wear OS użytkownika. Usługi Google Play mogą tworzyć jego kopię lub synchronizować go przez
+        serwery Google także przy dostępnym Bluetooth; transfer przez chmurę jest szyfrowany end-to-end i
+        czytelny tylko dla aplikacji WorkRota z tym samym podpisem. WorkRota nie używa własnego konta w
+        chmurze ani backendu. Wyłączenie modułu wysyła minimalny reset zawierający tylko wersję protokołu,
+        stan wyłączenia, znacznik czasu, numer synchronizacji i token synchronizacji; po dostarczeniu zastępuje
+        on wcześniejsze dane zmian.
       </p>
 
       <h2>5. Google Play i RevenueCat</h2>
@@ -645,7 +758,9 @@
         Analityka jest domyślnie wyłączona. Po jej włączeniu WorkRota wysyła do RevenueCat wyłącznie pseudonimowe,
         zbiorcze liczniki użycia funkcji, aktywacji i procesu zakupu, powiązane z identyfikatorem klienta RevenueCat.
         Nie wysyła treści grafiku, wynagrodzenia, notatek, dokumentów, kalendarza ani powiadomień. Zgodę można
-        wycofać w dowolnym momencie; zatrzyma to przyszłe liczniki WorkRota. Ustawienie nie steruje automatycznymi
+        wycofać w dowolnym momencie. Aplikacja przestaje dodawać nowe liczniki, oznacza wszystkie atrybuty
+        analityczne WorkRota w pamięci SDK RevenueCat do usunięcia i prosi SDK o synchronizację. Nie wycofuje to
+        żądania dostawcy będącego już w toku ani wcześniej odebranych danych. Ustawienie nie steruje automatycznymi
         metrykami technicznymi ML Kit opisanymi powyżej.
       </p>
 
@@ -673,8 +788,9 @@
         zapasowych, wpisów w kalendarzu WorkRota ani klucza bezpieczeństwa zapisanego przez system. Usuń je osobno
         w pamięci, kalendarzu lub ustawieniach urządzenia. Kopia wybranej kopii zapasowej może po imporcie pozostać
         w pamięci podręcznej do jej wyczyszczenia. Odinstalowanie zwykle usuwa prywatną pamięć aplikacji, ale nie
-        pliki i kalendarz utworzone poza nią. Wyłączenie analityki produktu zatrzymuje przyszłe liczniki WorkRota.
-        Google Play, RevenueCat i Google ML Kit przechowują dane według swoich zasad i obowiązków prawnych.
+        pliki i kalendarz utworzone poza nią. Wyłączenie analityki produktu zatrzymuje nowe liczniki WorkRota i
+        żąda usunięcia atrybutów analitycznych z SDK RevenueCat. Dane będące już w przesyle lub wcześniej odebrane
+        przez Google Play, RevenueCat albo Google ML Kit są przechowywane według ich zasad i obowiązków prawnych.
       </p>
       <p>
         O usunięcie rekordu klienta RevenueCat można poprosić przez
@@ -702,7 +818,7 @@
 
     <article class="policy" id="sk" lang="sk">
       <h1>WorkRota – Zásady ochrany súkromia</h1>
-      <p class="meta">Účinné od: <strong>12. 7. 2026</strong></p>
+      <p class="meta">Účinné od: <strong>16. 8. 2026</strong></p>
 
       <h2>1. Prevádzkovateľ a kontakt</h2>
       <p>
@@ -749,6 +865,13 @@
           uložíte cez systémové rozhranie.
         </li>
         <li>
+          Voliteľné súkromné zdieľanie vytvorí overený HTTPS odkaz. Zašifrovaný obsah je v ceste URL a môže
+          sa objaviť v technických záznamoch hostingu GitHub Pages; dešifrovací kľúč zostáva vo fragmente za
+          znakom <code>#</code>, ktorý sa pri bežnej HTTP požiadavke serveru neposiela. WorkRota na tento hosting
+          neposiela nezašifrovaný rozpis ani údaje o mzde. Celý odkaz vrátane kľúča vidí iba aplikácia alebo
+          osoba, s ktorou sa ho sami rozhodnete zdieľať.
+        </li>
+        <li>
           Voliteľná spätná väzba otvorí koncept e-mailu, ktorý môžete pred odoslaním upraviť. Obsahuje len vaše
           údaje a zobrazený diagnostický súhrn, napríklad verziu, jazyk, plán, počet spustení, platformu a čas.
           Nič sa neodošle bez vášho potvrdenia.
@@ -762,6 +885,24 @@
         vami vybrané obdobie 7, 14 alebo 30 dní. WorkRota nežiada o prístup na pozadí, nezapisuje
         zdravotné údaje, súhrn spánku neodosiela ani nezdieľa a nepoužíva ho ako zdravotné posúdenie.
         Prístup môžete kedykoľvek odobrať v nastaveniach Health Connect.
+      </p>
+
+      <h2>4b. Voliteľná synchronizácia s Wear OS</h2>
+      <p>
+        Modul Wear OS je predvolene vypnutý a vyžaduje WorkRota Pro. Po zapnutí vytvorí trvalý DataItem a
+        synchronizuje medzi spárovanými zariadeniami súhrn najviac siedmich najbližších zmien. Pri každej
+        zmene obsahuje iba dátum, názov, krátky kód a čas začiatku a konca; dátový balík obsahuje aj verziu
+        protokolu, stav modulu, zvolený jazyk a regionálny formát aplikácie, čas a poradové číslo synchronizácie
+        a náhodný synchronizačný token pre danú inštaláciu. Služby Google Play prideľujú identifikátor
+        zdrojového zariadenia; oba identifikátory slúžia len na odmietnutie zastaraných aktualizácií. Mzdu,
+        sadzby, poznámky ani identifikátory zmien, cyklov alebo iné prevádzkové
+        identifikátory neobsahuje. DataItem zostáva dostupný, kým nie je
+        nahradený alebo odstránený, a synchronizuje sa medzi zariadeniami v Wear OS sieti používateľa.
+        Služby Google Play ho môžu zálohovať alebo synchronizovať cez servery Google aj pri dostupnom
+        Bluetooth; cloudový prenos je koncovo šifrovaný a údaje môže čítať iba rovnako podpísaná aplikácia
+        WorkRota. WorkRota na tento prenos nepoužíva vlastný cloudový účet ani backend. Po vypnutí modulu
+        telefón odošle minimálny reset tvorený verziou protokolu, vypnutým stavom, časom a poradovým číslom
+        synchronizácie a synchronizačným tokenom; po doručení nahradí skoršie údaje o zmenách.
       </p>
 
       <h2>5. Google Play a RevenueCat</h2>
@@ -781,8 +922,10 @@
         Analytika je predvolene vypnutá. Po zapnutí WorkRota odošle do RevenueCat len pseudonymné súhrnné
         počítadlá používania funkcií, aktivácie a nákupného procesu, spojené s identifikátorom zákazníka RevenueCat.
         Neodosiela obsah rozpisu, mzdy, poznámok, dokumentov, kalendára ani oznámení. Súhlas môžete kedykoľvek
-        odvolať; zastaví sa tým budúce odosielanie počítadiel WorkRota. Toto nastavenie neovláda automatické
-        technické metriky ML Kit opísané vyššie.
+        odvolať. Aplikácia prestane pridávať nové počítadlá, označí všetky analytické atribúty WorkRota v cache
+        RevenueCat SDK na odstránenie a požiada SDK o synchronizáciu. Už prebiehajúcu požiadavku poskytovateľa
+        ani skôr prijaté údaje tým nemožno spätne odvolať. Toto nastavenie neovláda automatické technické metriky
+        ML Kit opísané vyššie.
       </p>
 
       <h2>7. Účely a právne dôvody</h2>
@@ -809,8 +952,9 @@
         udalosti v kalendári WorkRota ani bezpečnostný kľúč uložený systémom. Odstráňte ich osobitne v úložisku,
         kalendári alebo nastaveniach zariadenia. Kópia vybranej zálohy môže po importe zostať vo vyrovnávacej
         pamäti, kým ju systém alebo používateľ nevymaže. Odinštalovanie zvyčajne odstráni súkromné úložisko aplikácie,
-        nie súbory a udalosti vytvorené mimo neho. Vypnutie produktovej analytiky zastaví budúce počítadlá WorkRota.
-        Google Play, RevenueCat a Google ML Kit uchovávajú údaje podľa svojich pravidiel a zákonných povinností.
+        nie súbory a udalosti vytvorené mimo neho. Vypnutie produktovej analytiky zastaví nové počítadlá WorkRota
+        a vyžiada odstránenie analytických atribútov z RevenueCat SDK. Údaje už v prenose alebo skôr prijaté Google
+        Play, RevenueCat či Google ML Kit sa uchovávajú podľa ich pravidiel a zákonných povinností.
       </p>
       <p>
         O vymazanie záznamu zákazníka RevenueCat môžete požiadať na
